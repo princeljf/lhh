@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'MyFont';
+    src:  url('../font/test.otf') format('woff');
+}
+    
+.hello {
+    color: red;
+    font-family: 'MyFont';
+    background: url('../img/icon.jpeg');
+    
+}
