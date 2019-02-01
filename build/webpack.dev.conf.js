@@ -21,6 +21,11 @@ const config = {
         // stats: "errors-only", //stats: "errors-only"表示只打印错误：
         hot: true // 开启热更新
     },
+    watchOptions: {
+        aggregateTimeout: 600,
+        poll: 1200,
+        ignored: /node_modules/
+    },
     plugins: [
         new webpack.NamedModulesPlugin(),
         new webpack.HotModuleReplacementPlugin()
@@ -39,4 +44,6 @@ moduleArr.map((moduleName)=>{
     
 });
 
-module.exports = merge(common, config);
+const devConfig = merge(common, config);
+console.log('development config = ', devConfig);
+module.exports = devConfig;
