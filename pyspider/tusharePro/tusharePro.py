@@ -78,9 +78,5 @@ class Handler(BaseHandler):
         }
 
         print('------')
-        return {
-            "url": response.url,
-            "title": response.doc('title').text(),
-            "api": tsApi
-        }
+        return tsApi
     

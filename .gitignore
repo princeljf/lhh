@@ -3,3 +3,4 @@ node_modules/
 dist/
 src/datas/
 src/py/__pycache__/
+pyspider/**/data/
